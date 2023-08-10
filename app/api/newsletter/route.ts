@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
             email,
         });
 
-        await newsLetter.save();
+        await newsLetter.save();        
 
         const transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
             });
 
             await transporter.sendMail({
-                from: user,
+                from: 'mugabimoses07@gmail.com',
                 to: email,
                 replyTo: email,
                 subject: 'Subscribed Successfully',

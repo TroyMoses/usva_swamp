@@ -21,25 +21,38 @@ import andyImage from '../components/images/andy.png';
 import testyImage from '../components/images/testy.png';
 import axios from 'axios';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 import Anime from '../components/Anime.jsx';
 
-function Home() {
+export default function Home() {
 
-    // const router = useRouter();
+    const router = useRouter();
 
-    const [email, setEmail] = useState('');
+    const [updatesEmail, setUpdatesEmail] = React.useState({
+        email:''
+    });
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        axios.post('/api/newsletter', email)
-        .then(res => {
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        try {
+            const res = await fetch('/api/newsletter', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatesEmail)
+            });
+            const data = await res.json();
             router.push('/');
-        })
-        .catch(err);
-    }
+            setUpdatesEmail({
+                email: ''
+            });
+        } catch (error) {
+            console.error(error.message);
+        }
+    };
+
     return (
         <div className="relative mx-auto bg-gray-100">
 
@@ -579,8 +592,12 @@ function Home() {
                     <div className="flex justify-between text-md md:m-5">
                         <form onSubmit={handleSubmit}>
                             <div className="flex flex-col space-x-3 md:flex-row">
-                                <input type="email" name="email" placeholder='Enter Email Address' className="flex-1 px-4 py-2 rounded-full w-80 h-20 mb-3 md:mb-0 md:h-10 md:py-2" 
-                                onChange={e => setEmail(e.target.value)}/>
+                                <input 
+                                    type="email" 
+                                    id="email"
+                                    placeholder='Enter Email Address' 
+                                    className="flex-1 px-4 py-2 rounded-full w-80 h-20 mb-3 md:mb-0 md:h-10 md:py-2" 
+                                    onChange={(e) => setUpdatesEmail({...updatesEmail, email:e.target.value})}/>
                                 <button type='submit' className="px-6 py-2 text-white rounded-full bg-gray-500 hover:bg-gray-400 focus:outline-none">
                                     Submit
                                 </button>
@@ -639,6 +656,4 @@ function Home() {
             </footer>
         </div>
     )
-};
-
-export default Home;
+}

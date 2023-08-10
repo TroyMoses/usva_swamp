@@ -26,8 +26,7 @@ export async function POST(request: NextRequest) {
             sponsor,
         });
 
-        const partner = await newPartner.save();
-        console.log(partner);
+        await newPartner.save();
 
         const transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',

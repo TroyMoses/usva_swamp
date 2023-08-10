@@ -75,25 +75,24 @@ export default function MediaPage() {
                 <hr className='py-2'/>
                 <div className="flex md:space-y-0 md:justify-center md:space-x-4">
                     <div className="flex flex-col justify-center rounded-lg space-x-4 md:w-1/2">
-                        <div className='flex justify-center py-2'>
-                            <Image src={reception2Image} alt="" className='flex h-80 w-96 rounded-lg'/>
+                        
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/29aNK1yz5qQ" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                            </iframe>
                         </div>
-                        <div className='space-y-2'>
-                            <h1 className='text-xl font-bold '>
-                                Mastering Volleyball Techniques: Essential Tips for Players.
+                        <div className='space-y-2 text-center mt-2'>
+                            <h1 className='text-xl font-bold'>
+                                Men's Volleyball Nations League 2023
                             </h1>
                             <p>
-                                Volleyball is a dynamic sport that requires mastering various 
-                                techniques to excel on the court. To become a skilled player, 
-                                it's essential to focus on the fundamentals. Start by perfecting 
-                                your serving technique, which includes mastering different types 
-                                of serves such as the float serve, topspin serve, and jump serve. 
-                                Practice accurate passing and setting to facilitate successful attacks. 
-                                {/* Develop strong attacking skills, including spiking, tipping, and roll shots. 
-                                Additionally, work on your blocking and defensive skills to become a well-rounded player. 
-                                Remember to pay attention to footwork, body positioning, and communication with your teammates. 
-                                With dedicated practice and a focus on technique, you can master the essential skills of volleyball. */}
-                            
+                                POLAND <span className='text-xs'>(PL)</span> vs. USA <span className='text-xs'>(US)</span> - Highlights Final
                             </p>
                         </div>
                     </div>
@@ -106,34 +105,47 @@ export default function MediaPage() {
                 <hr className='py-2'/>
                 <div className="flex flex-col py-8 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
                     <div className="flex justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <Image src={reception2Image} alt="" className='w-56 h-56 rounded-lg'/>
-                        <div className='space-y-2'>
+                        <iframe 
+                            width="300" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/WwF36kP17-c" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
-                                Mastering Volleyball Techniques: Essential Tips for Players.
+                                Men's VNL 2023
                             </h1>
                             <p>
-                                Volleyball is a dynamic sport that requires mastering various 
-                                techniques to excel on the court. To become a skilled player, 
-                                it's essential to focus on the fundamentals. Start by perfecting 
-                                your serving technique, which includes mastering different types 
-                                of serves such as the float serve, topspin serve, and jump serve. 
-                                Practice accurate passing and setting to facilitate successful attacks. 
-                                
+                                USA <span className='text-xs'>(US)</span> vs. ITALY <span className='text-xs'>(IT)</span>
+                            </p>
+                            <p className='text-sm font-sans'>
+                                Highlights Semi Finals
                             </p>
                         </div>
                     </div>
 
                     <div className="flex bg-white rounded-lg space-x-4 md:w-1/2">
-                        <Image src={roles1Image} alt="" className='h-56 w-56 rounded-lg'/>
-                        <div className='space-y-2'>
+                        <iframe 
+                            width="300" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/yY9sGMIl5Uw" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
-                            Understanding Volleyball Positions and Roles on the Court.
+                                Men's VNL 2023
                             </h1>
                             <p>
-                                Volleyball is a team sport that relies on the cooperation and coordination of 
-                                players in various positions. Each position has a specific role and responsibilities 
-                                on the court. The setter is like the quarterback, responsible for setting up attacking 
-                                opportunities for their teammates. 
+                                JAPAN <span className='text-xs'>(JP)</span> vs. ITALY <span className='text-xs'>(IT)</span>
+                            </p>
+                            <p className='text-sm font-sans'>
+                                Highlights Finals
                             </p>
                         </div>
                     </div>
@@ -141,33 +153,47 @@ export default function MediaPage() {
 
                 <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
                     <div className="flex justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <Image src={vteam2Image} alt="" className='w-56 h-56 rounded-lg'/>
-                        <div className='space-y-2'>
+                        <iframe 
+                            width="300" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/tsmkdGGQRJ8" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
-                                Building a Strong Volleyball Team: Strategies for Success.
+                                Men's VNL 2023
                             </h1>
                             <p>
-                                Building a strong volleyball team goes beyond individual skills. 
-                                It requires teamwork, communication, and a positive team culture. 
-                                Start by fostering a supportive environment where players trust 
-                                and respect one another. Encourage open communication to facilitate 
-                                effective on-court coordination. 
+                                JAPAN <span className='text-xs'>(JP)</span> vs. POLAND <span className='text-xs'>(POL)</span>
+                            </p>
+                            <p className='text-sm font-sans'>
+                                Highlights Semi Finals
                             </p>
                         </div>
                     </div>
 
                     <div className="flex bg-white rounded-lg space-x-4 md:w-1/2">
-                        <Image src={nutritionImage} alt="" className='h-56 w-56 rounded-lg'/>
-                        <div className='space-y-2'>
+                        <iframe 
+                            width="300" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/k3nzXbay1Q0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
-                                Nutrition Tips for Volleyball Players: Fueling Your Performance.
+                                Men's VNL 2023
                             </h1>
                             <p>
-                                Proper nutrition plays a vital role in fueling performance and 
-                                optimizing recovery for volleyball players. Start by maintaining 
-                                a balanced diet that includes a variety of nutrient-dense foods 
-                                such as lean proteins, whole grains, fruits, vegetables, and 
-                                healthy fats. 
+                                USA <span className='text-xs'>(US)</span> vs. FRANCE <span className='text-xs'>(FR)</span>
+                            </p>
+                            <p className='text-sm font-sans'>
+                                Highlights Quarter Finals
                             </p>
                         </div>
                     </div>
@@ -175,31 +201,47 @@ export default function MediaPage() {
 
                 <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
                     <div className="flex justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <Image src={injuryImage} alt="" className='w-56 h-56 rounded-lg'/>
-                        <div className='space-y-2'>
+                        <iframe 
+                            width="300" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/01OAgyoS4X0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
-                                Injury Prevention in Volleyball: Exercises and Best Practices.
+                                Women's VNL 2023
                             </h1>
                             <p>
-                                Injuries are a common concern in volleyball, but with proper 
-                                prevention strategies, you can minimize the risk. Start by 
-                                incorporating a comprehensive warm-up routine that includes 
-                                dynamic stretching, mobility exercises, and activation drills. 
-                                </p>
+                                POLAND <span className='text-xs'>(PL)</span> vs. USA <span className='text-xs'>(US)</span>
+                            </p>
+                            <p className='text-sm font-sans'>
+                                Highlights Final
+                            </p>
                         </div>
                     </div>
 
                     <div className="flex bg-white rounded-lg space-x-4 md:w-1/2">
-                        <Image src={setgoalsImage} alt="" className='h-56 w-56 rounded-lg'/>
-                        <div className='space-y-2'>
+                        <iframe 
+                            width="300" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/IvVSkV6b5oU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
-                                Setting Goals in Volleyball: A Path to Improvement.
+                                Women's VNL 2023
                             </h1>
                             <p>
-                                Setting goals is a crucial aspect of personal and team development 
-                                in volleyball. Start by setting specific, measurable, achievable 
-                                goals that can be achieved together as a team.
-                            
+                                USA <span className='text-xs'>(US)</span> vs. TURKEY <span className='text-xs'>(TR)</span>
+                            </p>
+                            <p className='text-sm font-sans'>
+                                Highlights Semi Finals
                             </p>
                         </div>
                     </div>

@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Validation from '../../utils/subscribeValidation.jsx';
 import axios from 'axios';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { redirect } from 'next/dist/server/api-utils/index.js';
 
 export default function SubscribePage() {
 
-    // const router = useRouter();
+    const router = useRouter();
 
     const [values, setValues] = React.useState({
         fname: '',
@@ -21,23 +21,22 @@ export default function SubscribePage() {
     
     const [errors, setErrors] = React.useState({})
 
-    const handleInput = (event) => {
-        setValues(prev => ({...prev, [event.target.name]: [event.target.value]}))
-    };
+    const handleSubmit = async(e) => {
 
-    const handleSubmit = async(event) => {
-
-        event.preventDefault();
+        e.preventDefault();
         setErrors(Validation(values));
 
         if(errors.fname === "" && errors.lname === "" && errors.gender === "" && errors.email === "" && errors.category === "") {
             try {
-                const router = useRouter();
-                await axios.post('/api/member', values).then(() => {
-                    router.push('/');
-                }).catch((error) => {
-                    console.error(error.message);
+                const res = await fetch('/api/member', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(values)
                 });
+                await res.json();
+                router.push('/');
             } catch (error) {
                 console.error(error.message);
             } 
@@ -55,31 +54,31 @@ export default function SubscribePage() {
                     </div>
                     <div className='mb-3 mt-3'>
                         <input className='w-full border-2 border-neutral-200 p-2 my-2' type='text' name='fname' placeholder='First Name' 
-                        onChange={handleInput}/>
+                        onChange={(e) => setValues({...values, fname:e.target.value})}/>
                         {errors.fname && <span className='text-red-600'>{errors.fname}</span>}
                     </div>
 
                     <div className='mb-3 mt-3'>
                         <input className='w-full border-2 border-neutral-200 p-2 my-2' type='text' name='lname' placeholder='Second Name' 
-                        onChange={handleInput}/>
+                        onChange={(e) => setValues({...values, lname:e.target.value})}/>
                         {errors.lname && <span className='text-red-600'>{errors.lname}</span>}
                     </div>
 
                     <div className='mb-3 mt-3'>
                         <input className='w-full border-2 border-neutral-200 p-2 my-2' type='text' name='gender' placeholder='Gender' 
-                        onChange={handleInput}/>
+                        onChange={(e) => setValues({...values, gender:e.target.value})}/>
                         {errors.gender && <span className='text-red-600'>{errors.gender}</span>}
                     </div>
 
                     <div className='mb-3 mt-3'>
                         <input className='w-full border-2 border-neutral-200 p-2 my-2' type='email' name='email' placeholder='Email' 
-                        onChange={handleInput}/>
+                        onChange={(e) => setValues({...values, email:e.target.value})}/>
                         {errors.email && <span className='text-red-600'>{errors.email}</span>}
                     </div>
 
                     <div className='mb-3'>
                         <input className='w-full border-2 border-neutral-200 p-2 my-2'  type='text' name='category' placeholder='(e.g Player, Sponsor, other specify...)' 
-                        onChange={handleInput}/>
+                        onChange={(e) => setValues({...values, category:e.target.value})}/>
                         {errors.category && <span className='text-red-600'>{errors.category}</span>}
                     </div>
 

@@ -21,7 +21,7 @@ const memberSchema = new mongoose.Schema({
         required: [true, 'Please provide your email address'],
         trim: true,
     },
-    membership: {
+    category: {
         type: String,
         required: [true, 'Please specify your membership type'],
         trim: true,
