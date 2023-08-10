@@ -93,7 +93,7 @@ export default function GalleryPage() {
                         Recent Tournaments
                     </h1><br />
                     <div className='grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-between'>
-                        
+                        Photos loading .......
                     </div>
                 </div>
 
