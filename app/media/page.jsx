@@ -263,14 +263,14 @@ export default function MediaPage() {
 
                     {/* List Container */}
                     <div className="flex justify-around space-x-32">
-                        <div className="hidden flex-col space-y-3 text-white md:flex">                            
+                        <div className="flex flex-col space-y-3 text-white">                            
                             <Link href="/" className="hover:text-brightRed">Home</Link>
                             <Link href="articles" className="hover:text-brightRed">Articles</Link>
                             <Link href="/events" className="hover:text-brightRed">Events/Tournaments</Link>
                             
                         </div>
 
-                        <div className="flex flex-col space-y-2 text-white">
+                        <div className="hidden flex-col space-y-2 text-white md:flex">
                             <Link href="/media" className="hover:text-brightRed">Media</Link>
                             <Link href="/gallery" className="hover:text-brightRed">Gallery</Link>
                         </div>
