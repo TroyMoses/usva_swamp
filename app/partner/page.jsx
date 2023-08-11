@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Validation from '../../utils/partnerValidation.jsx';
 import axios from 'axios';
@@ -10,7 +10,7 @@ export default function Partner() {
 
     const router = useRouter();
 
-    const [values, setValues] = useState({
+    const [values, setValues] = React.useState({
         fname: '',
         lname: '',
         gender: '',
@@ -20,21 +20,43 @@ export default function Partner() {
         sponsor: ''
     });
 
-    const [errors, setErrors] = useState({})
+    const [errors, setErrors] = React.useState({});
+    const [buttonDisabled, setButonDisabled] = React.useState(false);
+    const [loading, setLoading] = React.useState(false);
 
-    const handleSubmit = (event) => {
+    useEffect(() => {
+        if(values.fname.length > 0 && values.lname.length > 0 && values.gender.length > 0 && values.email.length > 0 && values.address.length > 0 && values.phone.length > 0 && values.sponsor.length > 0) {
+          setButonDisabled(false);
+        } else {
+          setButonDisabled(true);
+        }
+      }, [values]);
+
+    const handleSubmit = async(event) => {
         event.preventDefault();
 
         setErrors(Validation(values));
 
         if(errors.fname === "" && errors.lname === "" && errors.gender === "" && errors.email === "" && errors.address === "" && errors.phone === "" && errors.sponsor === "") {
-            axios.post("/api/partner", values)
-            .then(res => {
+            try {
+                setLoading(true);
+                const res = await fetch('/api/partner', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(values)
+                });
+                const respo = await res.json();
                 router.push('/');
-            })
-            .catch(err => console.log(err));
+
+            } catch (error) {
+                console.error(error.message);
+            } finally {
+                setLoading(false);
+            }
         }
-    };
+        };
 
     return (
         <div className='flex flex-col justify-center font-serif items-center w-screen h-screen max-h-max'>
@@ -86,7 +108,16 @@ export default function Partner() {
                         {errors.sponsor && <span className='text-red-600'>{errors.sponsor}</span>}
                     </div>
 
-                    <button type='submit' className='w-full bg-brightRed text-white hover:bg-red-500 rounded-lg border-2 my-2 py-2'>Register</button>
+                    <div>
+                        <h2 className='text-center font-sans text-gray-600'>{loading ? 'Registering, please wait....' : ''}</h2>
+                    </div>
+
+                    <div>
+                        <h1 className='text-center text-gray-800'>Note: Please register ONCE.</h1>
+                        <h2 className='text-center font-sans text-gray-600'>{loading ? '' : '(After registering, check your inbox, you will be notified through email. )'}</h2>
+                    </div>
+
+                    <button type='submit' className='w-full bg-brightRed text-white hover:bg-red-500 rounded-lg border-2 my-2 py-2'>{buttonDisabled ? 'Please Enter Details' : 'Register'}</button>
                 </form>
             </div>
         </div>
