@@ -23,7 +23,8 @@ export async function POST(request: NextRequest) {
             category,
         });
 
-        await newMember.save();        
+        await newMember.save();
+        
 
         const transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',

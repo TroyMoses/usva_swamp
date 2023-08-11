@@ -47,7 +47,7 @@ export default function SubscribePage() {
                     },
                     body: JSON.stringify(values)
                 });
-                await res.json();
+                const respo = await res.json();
                 router.push('/');
 
             } catch (error) {
