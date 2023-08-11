@@ -26,7 +26,7 @@ export default function MediaPage() {
                 <div className="flex items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
 
                     {/* Logo */}
-                    <div className="flex space-x-6 mt-4 ml-24 ">
+                    <div className="flex space-x-6 mt-4 md:ml-24 ml-8">
                         <div>
                             <Image className='rounded-full w-24 flex h-24' src={logoImage} alt="Logo goes here" />
                         </div>
@@ -48,7 +48,7 @@ export default function MediaPage() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-4">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 
@@ -63,7 +63,7 @@ export default function MediaPage() {
                         <Link href="/" className='hover:text-brightRed'>Home</Link>                                        
                         <Link href="/articles" className='hover:text-brightRed'>Articles</Link>                                        
                         <Link href="/events" className='hover:text-brightRed'>Events/Tournaments</Link>                      
-                        <Link href="/gallery" className='hover:text-brightRed'>Gallery</Link>
+                        <Link href="/gallery" className='hover:text-brightRed'>Gallery</Link>                      
                         <Link href="/media" className='text-brightRed'>USVA Media</Link>                      
                     </div>
                 </div>
@@ -76,14 +76,15 @@ export default function MediaPage() {
                 <div className="flex md:space-y-0 md:justify-center md:space-x-4">
                     <div className="flex flex-col justify-center rounded-lg space-x-4 md:w-1/2">
                         
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center w-auto'>
                             <iframe 
                                 width="560" 
                                 height="315" 
                                 src="https://www.youtube.com/embed/29aNK1yz5qQ" 
                                 title="YouTube video player" 
                                 frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
 
                             </iframe>
                         </div>
@@ -104,16 +105,18 @@ export default function MediaPage() {
                 <h1 className="text-xl font-bold text-center py-6">YOUTUBE VIDEOS</h1>
                 <hr className='py-2'/>
                 <div className="flex flex-col py-8 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <iframe 
-                            width="300" 
-                            height="200" 
-                            src="https://www.youtube.com/embed/WwF36kP17-c" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <div className="flex flex-col md:flex-row text-center justify-center bg-white rounded-lg space-x-4 md:w-1/2">
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="300" 
+                                height="200" 
+                                src="https://www.youtube.com/embed/WwF36kP17-c" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            </iframe>
 
-                        </iframe>
+                        </div>
                         <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
                                 Men's VNL 2023
@@ -127,16 +130,19 @@ export default function MediaPage() {
                         </div>
                     </div>
 
-                    <div className="flex bg-white rounded-lg space-x-4 md:w-1/2">
-                        <iframe 
-                            width="300" 
-                            height="200" 
-                            src="https://www.youtube.com/embed/yY9sGMIl5Uw" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <div className="flex flex-col md:flex-row text-center bg-white rounded-lg space-x-4 md:w-1/2">
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="300" 
+                                height="200" 
+                                src="https://www.youtube.com/embed/yY9sGMIl5Uw" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-                        </iframe>
+                            </iframe>
+
+                        </div>
                         <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
                                 Men's VNL 2023
@@ -152,16 +158,19 @@ export default function MediaPage() {
                 </div>
 
                 <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <iframe 
-                            width="300" 
-                            height="200" 
-                            src="https://www.youtube.com/embed/tsmkdGGQRJ8" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <div className="flex flex-col md:flex-row text-center justify-center bg-white rounded-lg space-x-4 md:w-1/2">
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="300" 
+                                height="200" 
+                                src="https://www.youtube.com/embed/tsmkdGGQRJ8" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-                        </iframe>
+                            </iframe>
+
+                        </div>
                         <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
                                 Men's VNL 2023
@@ -175,16 +184,19 @@ export default function MediaPage() {
                         </div>
                     </div>
 
-                    <div className="flex bg-white rounded-lg space-x-4 md:w-1/2">
-                        <iframe 
-                            width="300" 
-                            height="200" 
-                            src="https://www.youtube.com/embed/k3nzXbay1Q0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <div className="flex flex-col md:flex-row text-center bg-white rounded-lg space-x-4 md:w-1/2">
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="300" 
+                                height="200" 
+                                src="https://www.youtube.com/embed/k3nzXbay1Q0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-                        </iframe>
+                            </iframe>
+
+                        </div>
                         <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
                                 Men's VNL 2023
@@ -200,16 +212,19 @@ export default function MediaPage() {
                 </div>
 
                 <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <iframe 
-                            width="300" 
-                            height="200" 
-                            src="https://www.youtube.com/embed/01OAgyoS4X0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <div className="flex flex-col md:flex-row text-center justify-center bg-white rounded-lg space-x-4 md:w-1/2">
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="300" 
+                                height="200" 
+                                src="https://www.youtube.com/embed/01OAgyoS4X0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-                        </iframe>
+                            </iframe>
+
+                        </div>
                         <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
                                 Women's VNL 2023
@@ -223,16 +238,19 @@ export default function MediaPage() {
                         </div>
                     </div>
 
-                    <div className="flex bg-white rounded-lg space-x-4 md:w-1/2">
-                        <iframe 
-                            width="300" 
-                            height="200" 
-                            src="https://www.youtube.com/embed/IvVSkV6b5oU" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <div className="flex flex-col md:flex-row text-center bg-white rounded-lg space-x-4 md:w-1/2">
+                        <div className='flex justify-center'>
+                            <iframe 
+                                width="300" 
+                                height="200" 
+                                src="https://www.youtube.com/embed/IvVSkV6b5oU" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-                        </iframe>
+                            </iframe>
+
+                        </div>
                         <div className='space-y-2 flex flex-col justify-center'>
                             <h1 className='text-xl font-bold '>
                                 Women's VNL 2023
@@ -262,8 +280,8 @@ export default function MediaPage() {
                     </div>
 
                     {/* List Container */}
-                    <div className="flex justify-around space-x-32">
-                        <div className="flex flex-col space-y-3 text-white">                            
+                    <div className="flex space-x-16 md:space-x-32">
+                        <div className="flex flex-col space-y-3 pl-16 text-white">                            
                             <Link href="/" className="hover:text-brightRed">Home</Link>
                             <Link href="articles" className="hover:text-brightRed">Articles</Link>
                             <Link href="/events" className="hover:text-brightRed">Events/Tournaments</Link>
@@ -276,7 +294,7 @@ export default function MediaPage() {
                         </div>
 
                         {/* Contacts */}
-                        <div className="flex flex-col space-y-1 text-gray-500">
+                        <div className="flex flex-col space-y-1 pr-10 text-gray-500">
                             <h2 className='text-xl text-gray-200'>Contacts:</h2>
                             <div className='flex flex-col'>
                                 <h6 className='text-gray-400'>Mr. Andrew</h6>

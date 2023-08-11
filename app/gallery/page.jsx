@@ -25,17 +25,12 @@ export default function GalleryPage() {
                 <div className="flex items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
 
                     {/* Logo */}
-                    <div className="flex space-x-6 mt-4 ml-24 ">
+                    <div className="flex space-x-6 mt-4 md:ml-24 ml-8">
                         <div>
                             <Image className='rounded-full w-24 flex h-24' src={logoImage} alt="Logo goes here" />
                         </div>
                         <div className='text-lg font-serif'>
-                            <h1 className='flex gap-1'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                                </svg>
-                                UGANDA
-                            </h1> 
+                            <h1>UGANDA</h1> 
                             <h1>SWAMP VOLLEYBALL</h1>
                             <h1>ASSOCIATION</h1>
                         </div>
@@ -52,7 +47,7 @@ export default function GalleryPage() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-4">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 
@@ -67,7 +62,7 @@ export default function GalleryPage() {
                         <Link href="/" className='hover:text-brightRed'>Home</Link>                                        
                         <Link href="/articles" className='hover:text-brightRed'>Articles</Link>                                        
                         <Link href="/events" className='hover:text-brightRed'>Events/Tournaments</Link>                      
-                        <Link href="/gallery" className='text-brightRed'>Gallery</Link>
+                        <Link href="/gallery" className='text-brightRed'>Gallery</Link>                      
                         <Link href="/media" className='hover:text-brightRed'>USVA Media</Link>                      
                     </div>
                 </div>
@@ -76,7 +71,7 @@ export default function GalleryPage() {
             {/* Articles Section */}
             <section className='my-2 px-2 mt-32 font-serif'>
                 <h1 className="text-xl font-bold text-center py-4">EXPLORE THE LIFE IN VOLLEYBALL</h1>
-                <p className='text-center px-40'>
+                <p className='text-center md:px-40 px-5'>
                     Step onto the vibrant court of our volleyball gallery and immerse yourself in 
                     the captivating world of this exhilarating sport. Here, we invite you to witness 
                     the energy, passion, and camaraderie that define volleyball. From the 
@@ -120,8 +115,8 @@ export default function GalleryPage() {
                     </div>
 
                     {/* List Container */}
-                    <div className="flex justify-around space-x-32">
-                        <div className="flex flex-col space-y-3 text-white">                            
+                    <div className="flex space-x-16 md:space-x-32">
+                        <div className="flex flex-col space-y-3 pl-16 text-white">                            
                             <Link href="/" className="hover:text-brightRed">Home</Link>
                             <Link href="articles" className="hover:text-brightRed">Articles</Link>
                             <Link href="/events" className="hover:text-brightRed">Events/Tournaments</Link>
@@ -134,7 +129,7 @@ export default function GalleryPage() {
                         </div>
 
                         {/* Contacts */}
-                        <div className="flex flex-col space-y-1 text-gray-500">
+                        <div className="flex flex-col space-y-1 pr-10 text-gray-500">
                             <h2 className='text-xl text-gray-200'>Contacts:</h2>
                             <div className='flex flex-col'>
                                 <h6 className='text-gray-400'>Mr. Andrew</h6>

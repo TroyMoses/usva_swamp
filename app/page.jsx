@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="flex items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
 
                     {/* Logo */}
-                    <div className="flex space-x-6 mt-4 ml-24 ">
+                    <div className="flex space-x-6 mt-4 md:ml-24 ml-8">
                         <div>
                             <Image className='rounded-full w-24 flex h-24' src={logoImage} alt="Logo goes here" />
                         </div>
@@ -85,7 +85,7 @@ export default function Home() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-4">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 
@@ -130,7 +130,7 @@ export default function Home() {
 
                     {/* Right Item */}
                     <div className='md:1/2 md:mr-10'>
-                        <Image className='h-96 w-full' src={proImage} alt="Ritah" />
+                        <Image className='h-auto md:h-96 w-full' src={proImage} alt="Hero Image" />
                     </div>
                 </div>
             </section>
@@ -158,7 +158,7 @@ export default function Home() {
                                 <h1 className='text-lg font-bold text-center py-2'>
                                     Values
                                 </h1>
-                                <ol className='flex justify-between'>                                
+                                <ol className='flex-col md:flex-row text-center md:justify-between'>                                
                                     <li>Respect</li>
                                     <li>Discipline</li>
                                     <li>Equality</li>
@@ -596,9 +596,9 @@ export default function Home() {
                                     type="email" 
                                     id="email"
                                     placeholder='Enter Email Address' 
-                                    className="flex-1 px-4 py-2 rounded-full w-80 h-20 mb-3 md:mb-0 md:h-10 md:py-2" 
+                                    className="flex-1 px-4 py-2 rounded-full w-64 h-20 mb-3 md:mb-0 md:h-10 md:py-2" 
                                     onChange={(e) => setUpdatesEmail({...updatesEmail, email:e.target.value})}/>
-                                <button type='submit' className="px-6 py-2 text-white rounded-full bg-gray-500 hover:bg-gray-400 focus:outline-none">
+                                <button type='submit' className="px-3 py-2 text-white rounded-full bg-gray-500 hover:bg-gray-400 focus:outline-none">
                                     Submit
                                 </button>
                             </div>
@@ -621,8 +621,8 @@ export default function Home() {
                     </div>
 
                     {/* List Container */}
-                    <div className="flex justify-around space-x-32">
-                        <div className="flex flex-col space-y-3 text-white">                            
+                    <div className="flex space-x-16 md:space-x-32">
+                        <div className="flex flex-col space-y-3 pl-16 text-white">                            
                             <Link href="/" className="hover:text-brightRed">Home</Link>
                             <Link href="articles" className="hover:text-brightRed">Articles</Link>
                             <Link href="/events" className="hover:text-brightRed">Events/Tournaments</Link>
@@ -635,7 +635,7 @@ export default function Home() {
                         </div>
 
                         {/* Contacts */}
-                        <div className="flex flex-col space-y-1 text-gray-500">
+                        <div className="flex flex-col space-y-1 pr-10 text-gray-500">
                             <h2 className='text-xl text-gray-200'>Contacts:</h2>
                             <div className='flex flex-col'>
                                 <h6 className='text-gray-400'>Mr. Andrew</h6>
