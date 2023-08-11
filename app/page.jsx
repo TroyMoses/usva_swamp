@@ -107,7 +107,7 @@ export default function Home() {
             </nav>
 
             {/* Hero Section */}
-            <section id="hero">
+            <section id="hero" className='mx-auto'>
 
                 {/* Flex Container */}
                 <div className="flex flex-col justify-between items-center px-6 mx-4 pt-40 space-y-0 md:mx-14 md:space-y-0 md:flex-row">
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="about_us">
+            <section id="about_us" className='mx-auto'>
                 {/* About Us Section */}
                 <div className='justify-center rounded-lg mb-20 py-2 mx-4 space-y-12 mt-10'>
                     <div>
@@ -194,7 +194,7 @@ export default function Home() {
             </section>
 
             {/* Services */}
-            <section id="services">
+            <section id="services" className='mx-auto'>
                 {/* Container to heading and services blocks */}
                 <div className="max-w-6xl px-5 mx-auto mt-10 text-center">
 
@@ -318,7 +318,7 @@ export default function Home() {
             </section>
 
             {/* Features Section */}
-            <section id="features">
+            <section id="features" className='mx-auto'>
 
                 {/* Flex Section */}
                 <div className="flex flex-col px-4 mt-5 space-y-12 md:space-y-0 md:mx-20 md:flex-row">
@@ -466,7 +466,7 @@ export default function Home() {
             </section>
 
             {/* Testimonials */}
-            <section id="testimonials">
+            <section id="testimonials" className='mx-auto'>
 
                 {/* Container to heading and testm blocks */}
                 <div className="max-w-6xl px-5 mx-auto mt-16 text-center">
@@ -527,7 +527,7 @@ export default function Home() {
 
             </section>           
 
-            <section className='flex justify-center mx-4 my-5 rounded-3xl p-4 '>
+            <section className='flex justify-center my-5 rounded-3xl p-4 mx-auto'>
                 <div>                
                     {/* Social links container */}
                     <div className='flex justify-center pl-10 pb-6 text-3xl font-bold md:pl-0'>
@@ -608,7 +608,7 @@ export default function Home() {
             </section>
 
             {/* Footer */}
-            <footer className="bg-gray-800 mt-4 pr-16 md:pr-0">               
+            <footer className="bg-gray-800 mt-4 pr-16 md:pr-0 mx-auto">               
 
                 {/* Flex Section */}
                 <div className="flex flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
