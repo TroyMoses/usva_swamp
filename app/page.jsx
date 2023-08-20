@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="flex w-screen items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
 
                     {/* Logo */}
-                    <div className="flex space-x-6 mt-4 md:ml-24 ml-4">
+                    <div className="flex space-x-6 mt-4 md:ml-24 ml-8">
                         <div>
                             <Image className='rounded-full w-24 flex h-24' src={logoImage} alt="Logo goes here" />
                         </div>
@@ -85,7 +85,7 @@ export default function Home() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-14 left-0">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-6 left-0">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 
@@ -608,7 +608,7 @@ export default function Home() {
             </section>
 
             {/* Footer */}
-            <footer className="bg-gray-800 mt-4 pr-16 md:pr-0 mx-auto">               
+            <footer className="bg-gray-800 w-screen mt-4 pr-16 md:pr-0 mx-auto">               
 
                 {/* Flex Section */}
                 <div className="flex flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
