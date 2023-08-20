@@ -23,7 +23,7 @@ export default function MediaPage() {
         <div className="relative mx-auto h-screen w-screen">
 
             {/* Navbar */}
-            <nav className="fixed w-screen mt-0 top-0 mx-auto px-6 bg-gray-300">
+            <nav className="flex w-screen mt-0 top-0 mx-auto px-6 bg-gray-300">
 
                 {/* Flex Container */}
                 <div className="flex w-screen items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
@@ -73,7 +73,7 @@ export default function MediaPage() {
             </nav>
 
             {/* Live Stream Section */}
-            <section className='my-2 px-2 mt-32 font-serif'>
+            <section className='my-2 px-2 mt-5 font-serif'>
                 <h1 className="text-xl font-bold text-center py-2">USVA MEDIA STREAM</h1>
                 <hr className='py-2'/>
                 <div className="flex md:space-y-0 md:justify-center md:space-x-4">
