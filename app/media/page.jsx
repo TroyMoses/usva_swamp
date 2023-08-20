@@ -10,7 +10,9 @@ import vteam2Image from '../../components/images/vteam2.png';
 import nutritionImage from '../../components/images/nutrition.jpg';
 import injuryImage from '../../components/images/injury.jpg';
 import setgoalsImage from '../../components/images/setgoals.jpg';
-import ethansVideo from '../../components/videos/ethans.mp4';
+import ethansVideo1 from '../../components/videos/ethans1.mp4';
+import ethansVideo2 from '../../components/videos/ethans2.mp4';
+import ethansVideo3 from '../../components/videos/ethans3.mp4';
 
 
 import Anime from '../../components/Anime.jsx';
@@ -78,19 +80,10 @@ export default function MediaPage() {
                     <div className="flex flex-col justify-center rounded-lg space-x-4 md:w-1/2">
                         
                         <div className='flex justify-center w-auto'>
-                            {/* <iframe 
-                                width="560" 
-                                height="315" 
-                                src="https://www.youtube.com/embed/29aNK1yz5qQ" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
-
-                            </iframe> */}
-                            <video src={ethansVideo} 
+                            <video src={ethansVideo1} 
                                 controls 
-                                allowfullscreen />
+                                allowfullscreen 
+                            />
                         </div>
                         <div className='space-y-2 text-center mt-2'>
                             <h1 className='text-xl font-bold'>
@@ -111,164 +104,95 @@ export default function MediaPage() {
 
             {/* Articles Section */}
             <section className='my-2 px-2 mt-6 font-serif'>
-                <h1 className="text-xl font-bold text-center py-6">YOUTUBE VIDEOS</h1>
+                <h1 className="text-xl font-bold text-center py-6">USVA VIDEOS</h1>
                 <hr className='py-2'/>
                 <div className="flex flex-col py-8 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex flex-col md:flex-row text-center justify-center bg-white rounded-lg space-x-4 md:w-1/2">
+                    <div className="flex flex-col md:flex-row text-center md:text-left justify-center bg-white rounded-lg space-x-4 md:w-1/2">
                         <div className='flex justify-center'>
-                            <iframe 
-                                width="300" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/WwF36kP17-c" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            </iframe>
-
+                            <video 
+                                src={ethansVideo1} 
+                                controls 
+                                allowfullscreen
+                                className=' w-80 md:ml-20' 
+                            />
                         </div>
                         <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold '>
-                                Men's VNL 2023
+                            <h1 className='text-xl font-bold md:ml-4'>
+                                Ethans VC Family FunDay
                             </h1>
-                            <p>
-                                USA <span className='text-xs'>(US)</span> vs. ITALY <span className='text-xs'>(IT)</span>
+                            <p className='md:ml-4'>
+                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span>
                             </p>
-                            <p className='text-sm font-sans'>
-                                Highlights Semi Finals
+                            <p className='text-sm font-sans md:ml-4'>
+                                Friendly Game 1
                             </p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row text-center bg-white rounded-lg space-x-4 md:w-1/2">
+                    <div className="flex flex-col md:flex-row text-center md:text-left bg-white rounded-lg space-x-4 md:w-1/2">
                         <div className='flex justify-center'>
-                            <iframe 
-                                width="300" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/yY9sGMIl5Uw" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-                            </iframe>
-
+                            <video 
+                                src={ethansVideo2} 
+                                controls 
+                                allowfullscreen
+                                className=' w-80 md:ml-20' 
+                            />
                         </div>
                         <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold '>
-                                Men's VNL 2023
+                            <h1 className='text-xl font-bold md:ml-4'>
+                                Ethans VC Family FunDay
                             </h1>
-                            <p>
-                                JAPAN <span className='text-xs'>(JP)</span> vs. ITALY <span className='text-xs'>(IT)</span>
+                            <p className='md:ml-4'>
+                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span>
                             </p>
-                            <p className='text-sm font-sans'>
-                                Highlights Finals
+                            <p className='text-sm font-sans md:ml-4'>
+                                Friendly Game 2
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex flex-col md:flex-row text-center justify-center bg-white rounded-lg space-x-4 md:w-1/2">
+                    <div className="flex flex-col md:flex-row text-center md:text-left justify-center bg-white rounded-lg space-x-4 md:w-1/2">
                         <div className='flex justify-center'>
-                            <iframe 
-                                width="300" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/tsmkdGGQRJ8" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-                            </iframe>
-
+                            <video 
+                                src={ethansVideo3} 
+                                controls 
+                                allowfullscreen
+                                className=' w-80 md:ml-20' 
+                            />
                         </div>
                         <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold '>
-                                Men's VNL 2023
+                            <h1 className='text-xl font-bold md:ml-4'>
+                                Ethans VC Family FunDay
                             </h1>
-                            <p>
-                                JAPAN <span className='text-xs'>(JP)</span> vs. POLAND <span className='text-xs'>(POL)</span>
+                            <p className='md:ml-4'>
+                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span>
                             </p>
-                            <p className='text-sm font-sans'>
-                                Highlights Semi Finals
+                            <p className='text-sm font-sans md:ml-4'>
+                                Friendly Game 3
                             </p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row text-center bg-white rounded-lg space-x-4 md:w-1/2">
+                    <div className="flex flex-col md:flex-row text-center md:text-left bg-white rounded-lg space-x-4 md:w-1/2">
                         <div className='flex justify-center'>
-                            <iframe 
-                                width="300" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/k3nzXbay1Q0" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-                            </iframe>
-
+                            <video 
+                                src={ethansVideo2} 
+                                controls 
+                                allowfullscreen
+                                className=' w-80 md:ml-20' 
+                            />
                         </div>
                         <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold '>
-                                Men's VNL 2023
+                            <h1 className='text-xl font-bold md:ml-4'>
+                                Ethans VC Family FunDay
                             </h1>
-                            <p>
-                                USA <span className='text-xs'>(US)</span> vs. FRANCE <span className='text-xs'>(FR)</span>
+                            <p className='md:ml-4'>
+                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span>
                             </p>
-                            <p className='text-sm font-sans'>
-                                Highlights Quarter Finals
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex flex-col md:flex-row text-center justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <div className='flex justify-center'>
-                            <iframe 
-                                width="300" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/01OAgyoS4X0" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-                            </iframe>
-
-                        </div>
-                        <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold '>
-                                Women's VNL 2023
-                            </h1>
-                            <p>
-                                POLAND <span className='text-xs'>(PL)</span> vs. USA <span className='text-xs'>(US)</span>
-                            </p>
-                            <p className='text-sm font-sans'>
-                                Highlights Final
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row text-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <div className='flex justify-center'>
-                            <iframe 
-                                width="300" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/IvVSkV6b5oU" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-                            </iframe>
-
-                        </div>
-                        <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold '>
-                                Women's VNL 2023
-                            </h1>
-                            <p>
-                                USA <span className='text-xs'>(US)</span> vs. TURKEY <span className='text-xs'>(TR)</span>
-                            </p>
-                            <p className='text-sm font-sans'>
-                                Highlights Semi Finals
+                            <p className='text-sm font-sans md:ml-4'>
+                                Friendly Game
                             </p>
                         </div>
                     </div>
