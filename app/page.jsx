@@ -85,7 +85,7 @@ export default function Home() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-4 left-0">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-2">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 

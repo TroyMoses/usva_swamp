@@ -18,13 +18,13 @@ import Anime from '../../components/Anime.jsx';
 export default function MediaPage() {
     
     return (
-        <div className="relative mx-auto">
+        <div className="relative mx-auto h-screen w-screen">
 
             {/* Navbar */}
-            <nav className="fixed w-full mt-0 top-0 mx-auto px-6 bg-gray-300">
+            <nav className="fixed w-screen mt-0 top-0 mx-auto px-6 bg-gray-300">
 
                 {/* Flex Container */}
-                <div className="flex items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
+                <div className="flex w-screen items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
 
                     {/* Logo */}
                     <div className="flex space-x-6 mt-4 md:ml-24 ml-8">
@@ -276,21 +276,21 @@ export default function MediaPage() {
             </section>
 
             {/* Footer */}
-            <footer className="bg-gray-800 mt-4 pr-16 md:pr-0">               
+            <footer className="bg-gray-800 w-screen mt-4 pr-16 md:pr-0 mx-auto">               
 
                 {/* Flex Section */}
-                <div className="flex flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
+                <div className="flex w-screen flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
 
                     {/* Logo */}
-                    <div className="flex justify-center ml-16 md:space-y-0 md:ml-6">
+                    <div className="flex justify-center ml-16 mt-8 md:mt-0 md:space-y-0 md:ml-6">
                         <div>
                             <Image className='rounded-full w-48 h-48 border-white flex items-center md:ml-16' src={logoImage} alt="Logo goes here" />
                         </div>
                     </div>
 
                     {/* List Container */}
-                    <div className="flex space-x-16 md:space-x-32">
-                        <div className="flex flex-col space-y-3 pl-16 text-white">                            
+                    <div className="flex flex-col md:flex-row space-x-16 text-center md:text-left space-y-5 md:space-y-0 md:space-x-32">
+                        <div className="flex flex-col space-y-3 md:pl-16 text-white">                            
                             <Link href="/" className="hover:text-brightRed">Home</Link>
                             <Link href="articles" className="hover:text-brightRed">Articles</Link>
                             <Link href="/events" className="hover:text-brightRed">Events/Tournaments</Link>
