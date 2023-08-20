@@ -151,52 +151,6 @@ export default function MediaPage() {
                         </div>
                     </div>
                 </div>
-
-                <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    <div className="flex flex-col md:flex-row text-center md:text-left justify-center bg-white rounded-lg space-x-4 md:w-1/2">
-                        <div className='flex justify-center'>
-                            <video 
-                                src={ethansVideo3} 
-                                controls 
-                                allowfullscreen
-                                className=' w-80 md:ml-20' 
-                            />
-                        </div>
-                        <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold md:ml-4'>
-                                Ethans VC Family FunDay
-                            </h1>
-                            <p className='md:ml-4'>
-                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span>
-                            </p>
-                            <p className='text-sm font-sans md:ml-4'>
-                                Friendly Game 3
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row text-center md:text-left bg-white rounded-lg space-x-4 md:w-1/2">
-                        <div className='flex justify-center'>
-                            <video 
-                                src={ethansVideo2} 
-                                controls 
-                                allowfullscreen
-                                className=' w-80 md:ml-20' 
-                            />
-                        </div>
-                        <div className='space-y-2 flex flex-col justify-center'>
-                            <h1 className='text-xl font-bold md:ml-4'>
-                                Ethans VC Family FunDay
-                            </h1>
-                            <p className='md:ml-4'>
-                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span>
-                            </p>
-                            <p className='text-sm font-sans md:ml-4'>
-                                Friendly Game
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </section>
 
             {/* Footer */}
