@@ -132,7 +132,7 @@ export default function MediaPage() {
                     <div className="flex flex-col md:flex-row text-center md:text-left bg-white rounded-lg space-x-4 md:w-1/2">
                         <div className='flex justify-center'>
                             <video 
-                                src={ethansVideo2} 
+                                src={ethansVideo3}
                                 controls 
                                 allowfullscreen
                                 className=' w-80 md:ml-20' 
