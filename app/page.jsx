@@ -54,7 +54,7 @@ export default function Home() {
     };
 
     return (
-        <div className="relative mx-auto bg-gray-100">
+        <div className="relative mx-auto h-screen w-screen bg-gray-100">
 
             {/* Navbar */}
             <nav className="fixed w-full mt-0 top-0 mx-auto px-6 bg-gray-300">

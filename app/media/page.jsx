@@ -10,6 +10,7 @@ import vteam2Image from '../../components/images/vteam2.png';
 import nutritionImage from '../../components/images/nutrition.jpg';
 import injuryImage from '../../components/images/injury.jpg';
 import setgoalsImage from '../../components/images/setgoals.jpg';
+import ethansVideo from '../../components/videos/ethans.mp4';
 
 
 import Anime from '../../components/Anime.jsx';
@@ -71,13 +72,13 @@ export default function MediaPage() {
 
             {/* Live Stream Section */}
             <section className='my-2 px-2 mt-32 font-serif'>
-                <h1 className="text-xl font-bold text-center py-2">LIVE STREAM</h1>
+                <h1 className="text-xl font-bold text-center py-2">USVA MEDIA STREAM</h1>
                 <hr className='py-2'/>
                 <div className="flex md:space-y-0 md:justify-center md:space-x-4">
                     <div className="flex flex-col justify-center rounded-lg space-x-4 md:w-1/2">
                         
                         <div className='flex justify-center w-auto'>
-                            <iframe 
+                            {/* <iframe 
                                 width="560" 
                                 height="315" 
                                 src="https://www.youtube.com/embed/29aNK1yz5qQ" 
@@ -86,14 +87,22 @@ export default function MediaPage() {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
 
-                            </iframe>
+                            </iframe> */}
+                            <video src={ethansVideo} 
+                                controls 
+                                allowfullscreen />
                         </div>
                         <div className='space-y-2 text-center mt-2'>
                             <h1 className='text-xl font-bold'>
-                                Men's Volleyball Nations League 2023
+                                Ethanz VC Family FunDay
                             </h1>
+                            <p className='font-semibold'>
+                                Ethans A <span className='text-xs'>(EthA)</span> vs. Ethans B <span className='text-xs'>(EthB)</span> - Friendly Game
+                            </p>
                             <p>
-                                POLAND <span className='text-xs'>(PL)</span> vs. USA <span className='text-xs'>(US)</span> - Highlights Final
+                                The Ethans Volleyball Club Family had a really fun day. 
+                                They had so many games and among these, was the friendly game 
+                                between Team A and Team B of the Ethans Volleyball Club.
                             </p>
                         </div>
                     </div>
