@@ -85,7 +85,7 @@ export default function Home() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-6 left-0">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-4 left-0">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 
@@ -489,7 +489,7 @@ export default function Home() {
                             <p className="text-md text-gray-700">
                                 "USVA has managed to uplift the youths' talent of volleyball. 
                                 The ability to develop an all round physically and mentally 
-                                fit volleyballer is what we need in the volleball sport. And 
+                                fit volleyballer is what we need in the volleyball sport. And 
                                 USVA has provided it."
                             </p>
                         </div>
@@ -614,15 +614,15 @@ export default function Home() {
                 <div className="flex w-screen flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
 
                     {/* Logo */}
-                    <div className="flex justify-center ml-16 md:space-y-0 md:ml-6">
+                    <div className="flex justify-center ml-16 mt-8 md:mt-0 md:space-y-0 md:ml-6">
                         <div>
                             <Image className='rounded-full w-48 h-48 border-white flex items-center md:ml-16' src={logoImage} alt="Logo goes here" />
                         </div>
                     </div>
 
                     {/* List Container */}
-                    <div className="flex space-x-16 md:space-x-32">
-                        <div className="flex flex-col space-y-3 pl-16 text-white">                            
+                    <div className="flex flex-col md:flex-row space-x-16 text-center md:text-left space-y-5 md:space-y-0 md:space-x-32">
+                        <div className="flex flex-col space-y-3 md:pl-16 text-white">                            
                             <Link href="/" className="hover:text-brightRed">Home</Link>
                             <Link href="articles" className="hover:text-brightRed">Articles</Link>
                             <Link href="/events" className="hover:text-brightRed">Events/Tournaments</Link>
