@@ -80,6 +80,7 @@ export default function ArticlesPage() {
                             <Image src={reception2Image} alt="" className='h-56 w-56 rounded-lg'/>
                         </div>
                         <div className='space-y-2'>
+                            <input id='ch' type="checkbox" />
                             <h1 className='text-xl font-bold '>
                                 Mastering Volleyball Techniques: Essential Tips for Players.
                             </h1>
@@ -90,12 +91,21 @@ export default function ArticlesPage() {
                                 your serving technique, which includes mastering different types 
                                 of serves such as the float serve, topspin serve, and jump serve. 
                                 Practice accurate passing and setting to facilitate successful attacks. 
-                                {/* Develop strong attacking skills, including spiking, tipping, and roll shots. 
-                                Additionally, work on your blocking and defensive skills to become a well-rounded player. 
-                                Remember to pay attention to footwork, body positioning, and communication with your teammates. 
-                                With dedicated practice and a focus on technique, you can master the essential skills of volleyball. */}
-                            <span id='readArt1' className='text-red-600'> Read More..</span>
                             </p>
+                            <div className='read-more-text'>
+                                <p>
+                                    Develop strong attacking skills, including spiking, tipping, and roll shots. 
+                                    Additionally, work on your blocking and defensive skills to become a well-rounded player. 
+                                    Remember to pay attention to footwork, body positioning, and communication with your teammates. 
+                                    With dedicated practice and a focus on technique, you can master the essential skills of volleyball.
+                                </p>
+                                <label htmlFor='ch' id='readArt1' className='text-red-600'>
+                                    Show Less..
+                                </label>
+                            </div>
+                            <label htmlFor='ch' id='readArt1' className='text-red-600'>
+                                Read More..
+                            </label>
                         </div>
                     </div>
 
@@ -105,21 +115,32 @@ export default function ArticlesPage() {
                             <Image src={roles1Image} alt="" className='h-56 w-56 rounded-lg'/>
                         </div>
                         <div className='space-y-2'>
+                            <input id='ch2' type="checkbox" />
                             <h1 className='text-xl font-bold '>
-                            Understanding Volleyball Positions and Roles on the Court.
+                                Understanding Volleyball Positions and Roles on the Court.
                             </h1>
                             <p>
                                 Volleyball is a team sport that relies on the cooperation and coordination of 
                                 players in various positions. Each position has a specific role and responsibilities 
                                 on the court. The setter is like the quarterback, responsible for setting up attacking 
-                                opportunities for their teammates. {/*The libero is the defensive specialist, often wearing a 
-                                different-colored jersey and focusing on receiving serves and making defensive plays. 
-                                Middle blockers excel at blocking and quick attacking in the center of the net. Outside 
-                                hitters are versatile players who contribute to both offense and defense. Opposite hitters 
-                                are typically strong attackers who play opposite the setter. Understanding these positions 
-                                and their roles is crucial for effective teamwork and successful gameplay. */}
-                            <span id='readArt1' className='text-red-600'> Read More..</span>                                
+                                opportunities for their teammates. 
                             </p>
+                            <div className='read-more-text'>
+                                <p>
+                                    The libero is the defensive specialist, often wearing a 
+                                    different-colored jersey and focusing on receiving serves and making defensive plays. 
+                                    Middle blockers excel at blocking and quick attacking in the center of the net. Outside 
+                                    hitters are versatile players who contribute to both offense and defense. Opposite hitters 
+                                    are typically strong attackers who play opposite the setter. Understanding these positions 
+                                    and their roles is crucial for effective teamwork and successful gameplay.
+                                </p>
+                                <label htmlFor='ch2' id='readArt1' className='text-red-600'>
+                                    Show Less..
+                                </label>
+                            </div>
+                            <label htmlFor='ch2' id='readArt1' className='text-red-600'>
+                                Read More..
+                            </label>                                
                         </div>
                     </div>
                 </div>
@@ -131,6 +152,7 @@ export default function ArticlesPage() {
                             <Image src={vteam2Image} alt="" className='h-56 w-56 rounded-lg'/>
                         </div>
                         <div className='space-y-2'>
+                            <input id='ch3' type="checkbox" />
                             <h1 className='text-xl font-bold '>
                                 Building a Strong Volleyball Team: Strategies for Success.
                             </h1>
@@ -139,16 +161,26 @@ export default function ArticlesPage() {
                                 It requires teamwork, communication, and a positive team culture. 
                                 Start by fostering a supportive environment where players trust 
                                 and respect one another. Encourage open communication to facilitate 
-                                effective on-court coordination. {/* Develop a strong work ethic 
-                                through regular training sessions, focusing on both physical 
-                                fitness and skill development. Promote a growth mindset that 
-                                encourages players to learn from mistakes and continuously improve. 
-                                Emphasize teamwork over individual achievements and instill a sense 
-                                of collective responsibility for success. By implementing these 
-                                strategies, you can build a strong and cohesive volleyball team 
-                                that thrives on and off the court. */}
-                            <span id='readArt1' className='text-red-600'> Read More..</span>
+                                effective on-court coordination. 
                             </p>
+                            <div className='read-more-text'>
+                                <p>
+                                    Develop a strong work ethic 
+                                    through regular training sessions, focusing on both physical 
+                                    fitness and skill development. Promote a growth mindset that 
+                                    encourages players to learn from mistakes and continuously improve. 
+                                    Emphasize teamwork over individual achievements and instill a sense 
+                                    of collective responsibility for success. By implementing these 
+                                    strategies, you can build a strong and cohesive volleyball team 
+                                    that thrives on and off the court.
+                                </p>
+                                <label htmlFor='ch3' id='readArt1' className='text-red-600'> 
+                                    Show Less..
+                                </label>
+                            </div>
+                            <label htmlFor='ch3' id='readArt1' className='text-red-600'> 
+                                Read More..
+                            </label>
                         </div>
                     </div>
 
@@ -158,6 +190,7 @@ export default function ArticlesPage() {
                             <Image src={nutritionImage} alt="" className='h-56 w-56 rounded-lg'/>
                         </div>
                         <div className='space-y-2'>
+                            <input id='ch4' type="checkbox" />
                             <h1 className='text-xl font-bold '>
                                 Nutrition Tips for Volleyball Players: Fueling Your Performance.
                             </h1>
@@ -166,15 +199,25 @@ export default function ArticlesPage() {
                                 optimizing recovery for volleyball players. Start by maintaining 
                                 a balanced diet that includes a variety of nutrient-dense foods 
                                 such as lean proteins, whole grains, fruits, vegetables, and 
-                                healthy fats. {/* Hydration is crucial, so drink plenty of water 
-                                before, during, and after training sessions and matches. Consume 
-                                carbohydrates for energy and refuel with protein to support muscle 
-                                recovery. Pay attention to pre-match and post-match nutrition to 
-                                ensure optimal performance and efficient recovery. Consult with a 
-                                sports nutritionist or dietitian to develop a personalized 
-                                nutrition plan that meets your specific needs as a volleyball player. */}
-                            <span id='readArt1' className='text-red-600'> Read More..</span>
+                                healthy fats. 
                             </p>
+                            <div className='read-more-text'>
+                                <p>
+                                    Hydration is crucial, so drink plenty of water 
+                                    before, during, and after training sessions and matches. Consume 
+                                    carbohydrates for energy and refuel with protein to support muscle 
+                                    recovery. Pay attention to pre-match and post-match nutrition to 
+                                    ensure optimal performance and efficient recovery. Consult with a 
+                                    sports nutritionist or dietitian to develop a personalized 
+                                    nutrition plan that meets your specific needs as a volleyball player.
+                                </p>
+                                <label htmlFor='ch4' id='readArt1' className='text-red-600'> 
+                                    Show Less..
+                                </label>
+                            </div>
+                            <label htmlFor='ch4' id='readArt1' className='text-red-600'> 
+                                Read More..
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -186,6 +229,7 @@ export default function ArticlesPage() {
                             <Image src={injuryImage} alt="" className='h-56 w-56 rounded-lg'/>
                         </div>                        
                         <div className='space-y-2'>
+                            <input id='ch5' type="checkbox" />
                             <h1 className='text-xl font-bold '>
                                 Injury Prevention in Volleyball: Exercises and Best Practices.
                             </h1>
@@ -194,16 +238,25 @@ export default function ArticlesPage() {
                                 prevention strategies, you can minimize the risk. Start by 
                                 incorporating a comprehensive warm-up routine that includes 
                                 dynamic stretching, mobility exercises, and activation drills. 
-                                {/* Strengthen key muscle groups such as the legs, core, and shoulders 
-                                to provide stability and support. Focus on proper technique and 
-                                body mechanics during training and gameplay to reduce the risk of 
-                                overuse injuries. Allow adequate rest and recovery time between 
-                                practices and matches to prevent fatigue-related injuries. It's 
-                                also important to listen to your body and address any minor issues 
-                                before they escalate. By prioritizing injury prevention, you can 
-                                stay on the court and enjoy volleyball for years to come. */}
-                            <span id='readArt1' className='text-red-600'> Read More..</span>
                             </p>
+                            <div className='read-more-text'>
+                                <p>
+                                    Strengthen key muscle groups such as the legs, core, and shoulders 
+                                    to provide stability and support. Focus on proper technique and 
+                                    body mechanics during training and gameplay to reduce the risk of 
+                                    overuse injuries. Allow adequate rest and recovery time between 
+                                    practices and matches to prevent fatigue-related injuries. It's 
+                                    also important to listen to your body and address any minor issues 
+                                    before they escalate. By prioritizing injury prevention, you can 
+                                    stay on the court and enjoy volleyball for years to come.
+                                </p>
+                                <label htmlFor='ch5' id='readArt1' className='text-red-600'> 
+                                    Show Less..
+                                </label>
+                            </div>
+                            <label htmlFor='ch5' id='readArt1' className='text-red-600'> 
+                                Read More..
+                            </label>
                         </div>
                     </div>
 
@@ -220,7 +273,6 @@ export default function ArticlesPage() {
                                 Setting goals is a crucial aspect of personal and team development 
                                 in volleyball. Start by setting specific, measurable, achievable 
                                 goals that can be achieved together as a team.
-                            <span id='readArt1' className='text-red-600'> Read More..</span>                               
                             </p>
                         </div>
                     </div>

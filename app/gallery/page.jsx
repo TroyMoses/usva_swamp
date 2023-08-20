@@ -3,15 +3,36 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import logoImage from '../../components/images/logo1.png';
-import reception2Image from '../../components/images/reception2.png';
-import roles1Image from '../../components/images/roles1.jpg';
-import vteam2Image from '../../components/images/vteam2.png';
-import nutritionImage from '../../components/images/nutrition.jpg';
-import injuryImage from '../../components/images/injury.jpg';
-import setgoalsImage from '../../components/images/setgoals.jpg';
+import recentTourna1 from '../../components/images/recent_tourna.jpg';
+import recentTourna2 from '../../components/images/recent_tourna2.jpg';
+import recentTourna3 from '../../components/images/recent_tourna3.jpg';
+import recentTourna4 from '../../components/images/recent_tourna4.jpg';
+import recentTourna5 from '../../components/images/recent_tourna5.jpg';
+import recentTourna6 from '../../components/images/recent_tourna6.jpg';
+import recentTourna7 from '../../components/images/recent_tourna7.jpg';
+import recentTourna8 from '../../components/images/recent_tourna8.jpg';
+import recentTourna9 from '../../components/images/recent_tourna9.jpg';
+import tourna1 from '../../components/images/tourna1.jpg';
+import tourna2 from '../../components/images/tourna2.jpg';
+import tourna3 from '../../components/images/tourna3.jpg';
+import tourna4 from '../../components/images/tourna4.jpg';
+import tour1 from '../../components/images/tour1.jpg';
+import tour2 from '../../components/images/tour2.jpg';
+import tour3 from '../../components/images/tour3.jpg';
+import tour4 from '../../components/images/tour4.jpg';
+import tour5 from '../../components/images/tour5.jpg';
+import tour6 from '../../components/images/tour6.jpg';
+import tour7 from '../../components/images/tour7.jpg';
+import tour8 from '../../components/images/tour8.jpg';
+import tour9 from '../../components/images/tour9.jpg';
+import tour10 from '../../components/images/tour10.jpg';
+import tour11 from '../../components/images/tour11.jpg';
+import tour12 from '../../components/images/tour12.jpg';
 
 
 import Anime from '../../components/Anime.jsx';
+import ReadMore from '../../components/ReadMore.jsx';
+import ReadLess from '../../components/ReadLess.jsx';
 
 export default function GalleryPage() {
     
@@ -70,34 +91,110 @@ export default function GalleryPage() {
 
             {/* Articles Section */}
             <section className='my-2 px-2 mt-32 font-serif'>
+                <input id='ch' type="checkbox" />
                 <h1 className="text-xl font-bold text-center py-4">EXPLORE THE LIFE IN VOLLEYBALL</h1>
-                <p className='text-center md:px-40 px-5'>
+                <p className='read-more-container md:px-40 px-5'>
                     Step onto the vibrant court of our volleyball gallery and immerse yourself in 
                     the captivating world of this exhilarating sport. Here, we invite you to witness 
                     the energy, passion, and camaraderie that define volleyball. From the 
                     exhilarating serves to the gravity-defying spikes, our gallery captures 
-                    the very essence of life in volleyball. Experience the heart-pounding moments, 
-                    the triumphant victories, and the unbreakable team spirit that unite players 
-                    and fans alike. Let our collection of images take you on a visual journey, 
-                    celebrating the dynamic athleticism and the unforgettable memories that make 
-                    volleyball more than just a game – it's a way of life.
-                </p><br />
+                    the very essence of life in volleyball... 
+                </p>
+                <div className='read-more-text'>
+                    <p className='px-5 md:px-40'>
+                        Experience the heart-pounding moments, 
+                        the triumphant victories, and the unbreakable team spirit that unite players 
+                        and fans alike. Let our collection of images take you on a visual journey, 
+                        celebrating the dynamic athleticism and the unforgettable memories that make 
+                        volleyball more than just a game – it's a way of life.
+                    </p>
+                    <label htmlFor='ch' className='text-center pl-5 md:pl-40 text-blue-600'>
+                        Show Less...
+                    </label>
+                </div>
+                <label htmlFor='ch' className='text-center pl-5 md:pl-40 text-blue-600'>
+                    <p className='text-center'>
+                        Read More...
+                    </p>
+                </label>
+                <br />
                 <hr className='py-2'/>
-                <div className="flex flex-col md:flex-row mt-2 md:justify-center md:space-x-4">
-                    <h1 className='text-lg font-semibold'>
+                <div className="md:flex-row mt-2 px-5 md:px-20">
+                    <h1 className='text-lg text-center font-semibold'>
                         Recent Tournaments
                     </h1><br />
-                    <div className='grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-between'>
-                        Photos loading .......
+                    <div className='grid grid-cols-2 px-4 md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-between'>
+                        
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={recentTourna2} />
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={recentTourna4} />
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={recentTourna5} />
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={recentTourna7} />
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={recentTourna8} />
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={tourna1} />
+                        <Image 
+                            className='w-auto -mt-12 md:-mt-0 h-auto' 
+                            src={tourna3} />
+                        <Image 
+                            className='w-auto h-auto' 
+                            src={tourna2} />
+                        <Image 
+                            className='w-auto -mt-12 md:-mt-32 h-auto' 
+                            src={tourna4} />
+                        <Image 
+                            className='w-auto md:-mt-20 md:h-80 md:w-60 h-auto' 
+                            src={recentTourna1} />
+                        <Image 
+                            className='w-auto -mt-48 md:-mt-0 md:h-80 md:w-60 h-auto' 
+                            src={recentTourna6} />
+                        <Image 
+                            className='w-auto h-auto md:h-80 md:w-60' 
+                            src={recentTourna9} />
                     </div>
                 </div>
 
-                <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    
-                </div>
-
-                <div className="flex flex-col py-4 space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
-                    
+                <div className="md:flex-row mt-2 px-5 md:px-20">
+                    <h1 className='text-lg text-center font-semibold'>
+                        Tour To Tanzania
+                    </h1><br />
+                    <div className='grid grid-cols-2 px-4 md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-between'>
+                        <Image 
+                            className='w-auto h-auto md:h-40' 
+                            src={tour5} />
+                        <Image 
+                            className='w-auto h-auto md:h-40' 
+                            src={tour6} />
+                        <Image 
+                            className='w-auto h-auto md:h-40' 
+                            src={tour7} />
+                        <Image 
+                            className='w-auto h-auto md:h-40' 
+                            src={tour8} />
+                        <Image 
+                            className='w-auto h-auto md:h-40' 
+                            src={tour1} />
+                        <Image 
+                            className='w-auto h-auto md:h-40' 
+                            src={tour3} />
+                        <Image 
+                            className='w-auto h-auto md:h-80 md:w-56' 
+                            src={tour2} />
+                        <Image 
+                            className='w-auto h-auto md:h-80 md:w-48' 
+                            src={tour4} />
+                        
+                    </div>
                 </div>
             </section>
 
