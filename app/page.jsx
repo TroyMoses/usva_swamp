@@ -611,7 +611,7 @@ export default function Home() {
             <footer className="bg-gray-800 w-screen mt-4 pr-16 md:pr-0 mx-auto">               
 
                 {/* Flex Section */}
-                <div className="flex flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
+                <div className="flex w-screen flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
 
                     {/* Logo */}
                     <div className="flex justify-center ml-16 md:space-y-0 md:ml-6">
