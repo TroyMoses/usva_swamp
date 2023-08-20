@@ -57,13 +57,13 @@ export default function Home() {
         <div className="relative mx-auto h-screen w-screen bg-gray-100">
 
             {/* Navbar */}
-            <nav className="fixed w-full mt-0 top-0 mx-auto px-6 bg-gray-300">
+            <nav className="fixed w-screen mt-0 top-0 mx-auto px-6 bg-gray-300">
 
                 {/* Flex Container */}
-                <div className="flex items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
+                <div className="flex w-screen items-center justify-between rounded-3xl px-4 pb-2 -mx-4">
 
                     {/* Logo */}
-                    <div className="flex space-x-6 mt-4 md:ml-24 ml-8">
+                    <div className="flex space-x-6 mt-4 md:ml-24 ml-4">
                         <div>
                             <Image className='rounded-full w-24 flex h-24' src={logoImage} alt="Logo goes here" />
                         </div>
@@ -85,7 +85,7 @@ export default function Home() {
                     </div>
 
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-4">
+                    <button id="menu-btn" onClick={Anime} className="block hamburger md:hidden outline-none mr-14 left-0">
                        <span className="hamburger-top"></span> 
                        <span className="hamburger-middle"></span> 
                        <span className="hamburger-bottom"></span> 

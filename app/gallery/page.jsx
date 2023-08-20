@@ -156,7 +156,7 @@ export default function GalleryPage() {
                             className='w-auto md:-mt-20 md:h-80 md:w-60 h-auto' 
                             src={recentTourna1} />
                         <Image 
-                            className='w-auto -mt-48 md:-mt-0 md:h-80 md:w-60 h-auto' 
+                            className='w-auto -mt-20 md:-mt-0 md:h-80 md:w-60 h-auto' 
                             src={recentTourna6} />
                         <Image 
                             className='w-auto h-auto md:h-80 md:w-60' 
@@ -199,7 +199,7 @@ export default function GalleryPage() {
             </section>
 
             {/* Footer */}
-            <footer className="bg-gray-800 mt-4 pr-16 md:pr-0">               
+            <footer className="bg-gray-800 mt-4 pr-16 md:pr-0 w-screen">               
 
                 {/* Flex Section */}
                 <div className="flex flex-col-reverse justify-between px-6 py-10 mt-6 my-4 space-y-8 md:mr-40 md:flex-row md:space-y-0">
