@@ -1,7 +1,7 @@
 import './css/globals.css';
 
 export const metadata = {
-  title: 'USVA Swamp Volleyball',
+  title: 'Larks Tech Hub',
   description: 'Developed by TroyMoses',
 }
  
